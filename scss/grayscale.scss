@@ -1,0 +1,65 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'navbar.scss';
+@import 'masthead.scss';
+@import 'buttons.scss';
+@import 'about.scss';
+@import 'projects.scss';
+@import 'signup.scss';
+@import 'contact.scss';
+body {
+    font-family: 'Nunito';
+    letter-spacing: 0.0625em;
+}
+
+a {
+    color: $primary;
+    &:focus,
+    &:hover {
+        text-decoration: none;
+        color: darken($primary, 20%);
+    }
+}
+
+.bg-black {
+    background-color: $black !important;
+}
+
+.bg-primary {
+    background-color: $primary !important;
+}
+
+.text-primary {
+    color: $primary !important;
+}
+
+footer {
+    padding: 5rem 0;
+}
+
+
+/*
+ * CSS Page Transitions
+ * Don't forget to add vendor prefixes!
+ */
+
+.m-scene {
+    /** Basic styles for an animated element */
+    .scene_element {
+        animation-duration: 0.25s;
+        transition-timing-function: ease-in;
+        animation-fill-mode: both;
+    }
+    /** An element that fades in */
+    .scene_element--fadein {
+        animation-name: fadeIn;
+    }
+    /** An element that fades in and slides up */
+    .scene_element--fadeinup {
+        animation-name: fadeInUp;
+    }
+    /** An element that fades in and slides from the right */
+    .scene_element--fadeinright {
+        animation-name: fadeInRight;
+    }
+}
