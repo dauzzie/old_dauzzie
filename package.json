@@ -1,9 +1,12 @@
 {
     "title": "Grayscale",
     "name": "startbootstrap-grayscale",
+    "homepage": "http://dauzzie.github.io/old_dauzzie",
     "version": "5.0.6",
     "scripts": {
-        "start": "gulp watch"
+        "start": "gulp watch",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "description": "A grayscale one page HTML theme for Bootstrap.",
     "keywords": [
@@ -14,7 +17,6 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/grayscale",
     "bugs": {
         "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale/issues",
         "email": "feedback@startbootstrap.com"
@@ -26,7 +28,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale.git"
+        "url": "https://github.com/dauzzie/old_dauzzie.git"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.8.1",
@@ -39,7 +41,8 @@
         "lookforward": "^1.0.6",
         "vue": "^2.6.10",
         "vue-page-transition": "^0.2.2",
-        "vue-router": "^3.0.6"
+        "vue-router": "^3.0.6",
+        "gh-pages": "^3.1.0"
     },
     "devDependencies": {
         "browser-sync": "^2.26.7",
@@ -54,5 +57,6 @@
         "gulp-uglify": "3.0.2",
         "merge-stream": "^1.0.1",
         "webpack-bundle-analyzer": "^3.3.2"
+        
     }
 }
