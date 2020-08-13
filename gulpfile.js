@@ -12,6 +12,7 @@ const plumber = require("gulp-plumber");
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const uglify = require("gulp-uglify");
+var deploy      = require('gulp-gh-pages');
 
 // Load package.json for banner
 const pkg = require('./package.json');
@@ -117,6 +118,11 @@ function watchFiles() {
   gulp.watch("./js/**/*", js);
   gulp.watch("./**/*.html", browserSyncReload);
 }
+
+gulp.task('deploy', function () {
+  return gulp.src("./dist/**/*")
+    .pipe(deploy())
+});
 
 // Define complex tasks
 const vendor = gulp.series(clean, modules);

@@ -2,7 +2,7 @@
   "_args": [
     [
       "@fortawesome/fontawesome-free@5.8.1",
-      "/Users/mhusaini/Downloads/dauzzie.github.io-master"
+      "/Users/dauzzie/Documents/Projects/old_dauzzie"
     ]
   ],
   "_from": "@fortawesome/fontawesome-free@5.8.1",
@@ -27,7 +27,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-5.8.1.tgz",
   "_spec": "5.8.1",
-  "_where": "/Users/mhusaini/Downloads/dauzzie.github.io-master",
+  "_where": "/Users/dauzzie/Documents/Projects/old_dauzzie",
   "author": {
     "name": "Dave Gandy",
     "email": "dave@fontawesome.com",
